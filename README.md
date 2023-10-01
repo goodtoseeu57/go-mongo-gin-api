@@ -1,6 +1,6 @@
 # Go Backend App with Gin, Firebase Authentication, and MongoDB
 
-This is a simple Go backend application built with the Gin framework. It uses Firebase authentication and MongoDB as the database. The application allows users to create and fetch notes, with all operations protected by Firebase authentication.
+This is a Go backend application built with the Gin framework. It uses Firebase authentication and MongoDB as the database. The application allows users to create and fetch notes, with all operations protected by Firebase authentication.
 
 ## Prerequisites
 
