@@ -20,7 +20,14 @@ To run or debug the main application, follow these steps:
 
 2. Install the required Go packages.
 
-3. Run the app in normal or debug mode .vscode/launch.json helps on that
+3. Run the app in normal or debug mode `.vscode/launch.json` helps on that
+
+## How can I obtain a jwt token?
+
+After creating a user use this app and swap firebase.ts with your own public firebase config! 
+
+👉 [GitHub Repository](https://github.com/goodtoseeu57/firebase-react-login/tree/master)
+
 ## Routes
 
 The application provides the following routes:
