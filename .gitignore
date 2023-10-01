@@ -12,7 +12,7 @@ vendor/
 
 go.work
 
-firebase.json
+firebase-admin.json
 
 gin-binary
 
