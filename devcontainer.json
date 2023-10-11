@@ -1,0 +1,5 @@
+{
+  "name": "go-gin-mongo",
+  "image": "golang:1.20.4-buster",
+  "dockerFile": "Dockerfile",
+}
