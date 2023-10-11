@@ -35,7 +35,7 @@ func GetNoteById(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Error while finding a note"})
 		return
 	}
-	c.JSON(http.StatusBadRequest, gin.H{
+	c.JSON(http.StatusOK, gin.H{
 		"note": result,
 	})
 }

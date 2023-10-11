@@ -14,11 +14,12 @@ func main() {
 	config.FirebaseInit()
 	r := gin.Default()
 
-	r.POST("/create-note", authMiddleware.FirebaseAuthMiddleware(), noteshandler.CreateNote)
+	r.POST("/notes", authMiddleware.FirebaseAuthMiddleware(), noteshandler.CreateNote)
 	r.GET("/notes/:id", authMiddleware.FirebaseAuthMiddleware(), noteshandler.GetNoteById)
 	r.GET("notes", authMiddleware.FirebaseAuthMiddleware(), noteshandler.GetNotes)
+	r.PUT("/notes", authMiddleware.FirebaseAuthMiddleware(), noteshandler.EditNote)
 
-	r.POST("register", auth.Register)
+	r.POST("/register", auth.Register)
 
 	r.Run(":8000")
 }
