@@ -18,7 +18,6 @@ func main() {
 	r.GET("/notes/:id", authMiddleware.FirebaseAuthMiddleware(), noteshandler.GetNoteById)
 	r.GET("notes", authMiddleware.FirebaseAuthMiddleware(), noteshandler.GetNotes)
 	r.PUT("/notes", authMiddleware.FirebaseAuthMiddleware(), noteshandler.EditNote)
-
 	r.POST("/register", auth.Register)
 
 	r.Run(":8000")
